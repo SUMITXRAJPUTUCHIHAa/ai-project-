@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/index.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/api/index.py"
+    }
+  ],
+  "env": {
+    "AI_PROVIDER": "groq",
+    "AI_MODEL": "openai/gpt-oss-120b",
+    "GROQ_MODEL": "openai/gpt-oss-120b",
+    "AI_RAG_ENABLED": "true"
+  }
+}

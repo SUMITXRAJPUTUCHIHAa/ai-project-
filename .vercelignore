@@ -1,0 +1,14 @@
+.git
+.env
+.env.*
+.venv
+.vercel
+.pytest_cache
+__pycache__
+tests
+credentials
+*.db
+*.zip
+*.log
+node_modules
+run_local.bat

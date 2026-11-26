@@ -1,0 +1,20 @@
+{
+  "name": "lpu-admission-intelligence",
+  "version": "2.4.0",
+  "description": "LPU Admission Intelligence Chatbot (UMS 2024-25 Edition)",
+  "main": "run.js",
+  "scripts": {
+    "dev": "node run.js",
+    "start": "node run.js"
+  },
+  "keywords": [
+    "lpu",
+    "admissions",
+    "chatbot",
+    "groq",
+    "ai"
+  ],
+  "author": "LPU",
+  "license": "ISC"
+}
+

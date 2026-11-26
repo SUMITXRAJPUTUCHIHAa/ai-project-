@@ -1,0 +1,14 @@
+{
+  "hosting": {
+    "public": "static",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "rewrites": [
+      { "source": "/api/**", "run": { "serviceId": "lpu-admission-intelligence", "region": "asia-south1" } },
+      { "source": "**", "run": { "serviceId": "lpu-admission-intelligence", "region": "asia-south1" } }
+    ]
+  },
+  "firestore": {
+    "rules": "firestore.rules",
+    "indexes": "firestore.indexes.json"
+  }
+}

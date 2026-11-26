@@ -1,0 +1,45 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Helper functions
+    function isAdmin() {
+      return request.auth != null && request.auth.token.admin == true;
+    }
+
+    // 1. Conversation logs: allow append/create from chat client, read restricted
+    match /conversation_logs/{logId} {
+      allow create: if true;
+      allow read, update, delete: if isAdmin();
+    }
+
+    // 2. Custom rules: public read for inference, admin-only write/update/delete
+    match /custom_rules/{ruleId} {
+      allow read: if true;
+      allow write: if isAdmin();
+    }
+
+    // 3. Dialogue session state: read and write per session
+    match /session_state/{sessionId} {
+      allow read, write, delete: if true;
+    }
+
+    // 4. Escalations: create allowed for students, read/update restricted to counsellors/admin
+    match /escalations/{escalationId} {
+      allow create: if true;
+      allow read, update: if isAdmin();
+      allow delete: if isAdmin();
+    }
+
+    // 5. Admissions dataset & Knowledge Base: public read, admin-only write
+    match /admissions_dataset/{docId} {
+      allow read: if true;
+      allow write: if isAdmin();
+    }
+
+    match /knowledge_base/{docId} {
+      allow read: if true;
+      allow write: if isAdmin();
+    }
+  }
+}

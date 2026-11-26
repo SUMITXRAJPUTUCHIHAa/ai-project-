@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+admissions.db
+.env
+.env.*
+!.env.example
+.vercel/
+exports/*
+!exports/.gitkeep
+*serviceAccount*.json
+*firebase-credentials*.json
+*.key
+.venv/
+
+.vercel
+.env*

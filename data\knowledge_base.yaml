@@ -1,0 +1,390 @@
+meta:
+  university: Lovely Professional University (LPU), Phagwara, Punjab
+  kb_version: '2.4'
+  data_session: Admission 2026-27 (reference)
+  disclaimer: Figures compiled from lpu.in and public education portals for the 2026-27 session. They can change;
+    always confirm on lpu.in before paying any fee.
+  contact:
+    phone: 01824-404404
+    website: https://www.lpu.in
+    ums: https://ums.lpu.in
+  sources:
+    fees: https://www.lpu.in/nest/btech/fee-and-scholarship.php
+    hostel: https://collegedunia.com/university/25787-lovely-professional-university-lpu-jalandhar/hostel
+    programmes: https://www.lpu.in/programmes/all/
+programmes:
+  btech_cse:
+    name: B.Tech CSE (standard / IT)
+    level: UG
+    duration_years: 4
+    semesters: 8
+    fee_per_sem: 160000
+    exam_fee: 5000
+    exam_from_sem: 2
+    scholarship_family: btech
+    eligibility:
+      qualification: 10+2 with Physics, Mathematics and English
+      min_percent: 60
+      entrance: LPUNEST or JEE Main
+      note: Minimum aggregate shown is the commonly published criterion; some specialisations also require an interview.
+    curriculum: Core CS (programming, data structures, algorithms, DBMS, OS, networks), mathematics, labs, industry-aligned
+      electives and a final-year project/internship.
+    highlights: Most CSE specialisations (Cloud, Data Science, Cyber Security, Fintech and AI) are priced between
+      INR 1.6L and INR 2L per semester.
+  btech_aiml:
+    name: B.Tech CSE - AI & ML
+    level: UG
+    duration_years: 4
+    semesters: 8
+    fee_per_sem: 200000
+    exam_fee: 5000
+    exam_from_sem: 2
+    scholarship_family: btech
+    eligibility:
+      qualification: 10+2 with Physics, Mathematics and English
+      min_percent: 60
+      entrance: LPUNEST or JEE Main (+ interview for some AI tracks)
+      note: Some portals list INR 1.6L for AI/ML; the INR 2L figure is from the programme listing. Confirm for your
+        exact specialisation.
+    curriculum: Machine learning, deep learning, NLP, computer vision, data engineering, probability and statistics,
+      plus capstone projects.
+    highlights: Industry-tie-up variants (Applied AI, AI & Data Engineering, Gen AI) carry their own fee slabs.
+  btech:
+    name: B.Tech (other branches)
+    level: UG
+    duration_years: 4
+    semesters: 8
+    fee_per_sem: 140000
+    exam_fee: 5000
+    exam_from_sem: 2
+    scholarship_family: btech
+    eligibility:
+      qualification: 10+2 with Physics, Mathematics and English (PCM)
+      min_percent: 60
+      entrance: LPUNEST or JEE Main
+      note: Applies to Civil, Mechanical, EEE, Automobile and similar core branches; ECE and Robotics are priced
+        higher.
+    curriculum: Engineering mathematics and sciences in year 1, then branch-core subjects, labs, electives and a
+      project.
+    highlights: Core branches INR 1.4L per semester; Robotics & Automation INR 1.8L; optional 2+2 international
+      credit transfer carries an extra INR 50,000 in semester 1.
+  mba:
+    name: MBA (full-time)
+    level: PG
+    duration_years: 2
+    semesters: 4
+    fee_per_sem: 200000
+    exam_fee: 4500
+    exam_from_sem: 1
+    scholarship_family: mba
+    eligibility:
+      qualification: Bachelor's degree in any discipline
+      min_percent: 50
+      entrance: LPUNEST or CAT / XAT / MAT / CMAT
+      note: Semester fee ranges roughly INR 1.4L-2.5L by specialisation. The 50% minimum is the commonly published
+        figure.
+    curriculum: Management core (finance, marketing, HR, operations, analytics), specialisation electives, summer
+      internship and a capstone.
+    highlights: Total tuition is roughly INR 8.8L-10L for the 2 years; online MBA is a separate, cheaper programme.
+  bca:
+    name: BCA
+    level: UG
+    duration_years: 3
+    semesters: 6
+    fee_per_sem: 80000
+    exam_fee: 5000
+    exam_from_sem: 1
+    scholarship_family: ug
+    eligibility:
+      qualification: 10+2 in any stream with English
+      min_percent: 50
+      entrance: LPUNEST or CUET
+      note: Portals quote between 50% and 60% aggregate; confirm for your category.
+    curriculum: Programming, data structures, DBMS, web development, networks, software engineering, with specialisations
+      such as Data Science and Cyber Security.
+    highlights: Tuition about INR 4.8L over 3 years before scholarships.
+  barch:
+    name: B.Arch
+    level: UG
+    duration_years: 5
+    semesters: 10
+    fee_per_sem: 120000
+    exam_fee: 5000
+    exam_from_sem: 1
+    scholarship_family: ug
+    eligibility:
+      qualification: 10+2 with Physics, Mathematics and Chemistry/Technical subject
+      min_percent: 50
+      entrance: NATA or JEE Main Paper 2 (CoA norms)
+      note: A one-time uniform fee of INR 4,000 applies. CoA-approved 5-year programme.
+    curriculum: Design studio, building construction, structures, history of architecture, environmental design,
+      professional practice and training.
+    highlights: Fee about INR 1.2L per semester plus INR 5,000 exam fee.
+aliases_note: Alias mapping lives in engine/preprocessor.py
+scholarship:
+  lpunest_phases:
+  - phase: Phase I
+    note: Earliest LPUNEST window; early registration generally gives the widest choice of slots and the Early Decision
+      Benefit on hostel fees.
+  - phase: Phase II
+    note: Mid-cycle exam window; same cut-off based scholarship slabs apply to the score obtained.
+  - phase: Phase III
+    note: Last window before the session starts. For 2026 the B.Tech deadline was extended to 30 June 2026.
+  slabs:
+    btech:
+    - cutoff: A
+      pct: 60
+    - cutoff: B
+      pct: 50
+    - cutoff: C
+      pct: 40
+    - cutoff: D
+      pct: 30
+    ug:
+    - cutoff: A
+      pct: 35
+    - cutoff: B
+      pct: 30
+    - cutoff: C
+      pct: 25
+    - cutoff: D
+      pct: 20
+    mba:
+    - cutoff: A
+      pct: 35
+    - cutoff: B
+      pct: 30
+    - cutoff: C
+      pct: 25
+    - cutoff: D
+      pct: 20
+  other:
+  - 'LPU RISE: 100% programme-fee waiver for national-level toppers and top board performers.'
+  - Marks-based scholarships on previous two qualifying exams.
+  - Sports, cultural and need-based aid; 20% for female candidates and alumni on Ph.D.
+  - Scholarships apply to programme (tuition) fee only, not examination fee, hostel or mess.
+  note: Cut-off A-D score thresholds differ by programme and phase. Check lpu.in/nest for the exact score needed.
+hostel:
+  early_decision_discount: 10000
+  early_decision_note: 10,000 lower per year if booked before the EDB date (15 May for 2026); without EDB each category
+    costs INR 10,000 more.
+  tiers:
+  - type: Standard room
+    seater: 4
+    ac: false
+    annual: 93000
+  - type: Standard room
+    seater: 4
+    ac: true
+    annual: 103000
+  - type: Standard room
+    seater: 3
+    ac: true
+    annual: 120000
+  - type: Standard room
+    seater: 2
+    ac: false
+    annual: null
+  - type: Standard room
+    seater: 2
+    ac: true
+    annual: null
+  - type: Standard room
+    seater: 1
+    ac: true
+    annual: 153000
+  - type: Apartment (AC)
+    seater: 4
+    ac: true
+    annual: 100000
+  - type: Apartment (AC)
+    seater: 3
+    ac: true
+    annual: 120000
+  - type: Apartment (AC)
+    seater: 2
+    ac: true
+    annual: 150000
+  - type: Apartment (AC)
+    seater: 1
+    ac: true
+    annual: 190000
+  tier_note: Tiers with no figure are not published in the sources used; please confirm them with LPU Residential
+    Services. Annual figures are with the Early Decision Benefit where applicable.
+  overall_range: INR 70,000 to INR 2,00,000 per year depending on room type
+  mess:
+    standard:
+      name: Standard (two-meal)
+      annual: 40000
+    special:
+      name: Special / extended plans
+      annual_range: about 45,000-60,000
+    months: about 10 months per session
+  free_electricity: Non-AC rooms 250-500 free units per seat; AC rooms 350-1,000 units per seat; extra usage is
+    charged.
+  extras: Laundry about INR 5,000-10,000 per year; gym, swimming and sports are optional extras.
+admission:
+  booking_fee: 10000
+  steps:
+  - Register on lpu.in with your mobile number and email.
+  - Book and appear for LPUNEST (or submit your JEE Main / CUET / CAT-type score where accepted).
+  - Pay the INR 10,000 booking amount; it is adjusted against your first-semester fee.
+  - Check your scholarship slab from the LPUNEST result.
+  - Attend the interview if your chosen specialisation requires one (e.g. AI and Data Engineering tracks).
+  - Pay the first-semester fee, book hostel (use the Early Decision Benefit if eligible) and upload documents.
+  - Complete document verification and receive your UMS registration login.
+  deadlines: 'Dates change every session. Reference points for 2026: B.Tech Phase III deadline extended to 30 June
+    2026; BCA August-session applications closed 20 August 2026; classes start July-August. 2027 dates are announced
+    on lpu.in/nest.'
+documents:
+  ug:
+  - Class 10 marksheet and certificate (date-of-birth proof)
+  - Class 12 marksheet / provisional result
+  - LPUNEST / JEE Main / CUET scorecard
+  - Government photo ID (Aadhaar / passport)
+  - Passport-size photographs
+  - Transfer/migration certificate (where applicable)
+  - Category or other certificates if claiming a benefit
+  pg:
+  - Graduation marksheets and degree / provisional certificate
+  - Class 10 and 12 marksheets
+  - CAT / XAT / MAT / CMAT / LPUNEST scorecard
+  - Government photo ID
+  - Passport-size photographs
+  - Work-experience letters if applicable
+  lateral:
+  - Diploma (or 1st-year) marksheets and certificates
+  - Class 10 marksheet
+  - Government photo ID and photographs
+  - Migration/transfer certificate
+  international:
+  - Passport and visa copy
+  - Academic transcripts with equivalence certificate
+  - Photographs
+  - English proficiency proof where applicable
+  - Medical/fitness documents as required
+  note: Originals are verified at the university. Keep self-attested photocopies ready.
+ums:
+  portal: https://ums.lpu.in
+  login: Sign in with your registration number and the password issued at admission.
+  forgot: Use 'Forgot password' on the UMS login page and verify through your registered mobile or email. If that
+    fails, contact the university helpdesk.
+  features:
+  - Attendance and timetable
+  - Results and grade cards
+  - Fee payment and receipts
+  - Notices, messages and requests
+  - Registration for courses and exams
+special:
+  lateral:
+    fees:
+      Diploma CSE (lateral): 30000
+      B.Tech CSE (lateral entry): 160000
+      B.Tech CSE - AI & ML (lateral entry): 200000
+    eligibility: Diploma holders enter B.Tech directly into the 2nd year (3-year programme) with the required diploma
+      marks; 12th-pass students who completed a first-year can also apply through lateral routes. Confirm exact
+      marks on the programme page.
+    note: Fees are per semester (programme fee).
+  international:
+    fees:
+      B.Tech CSE / IT: USD 2,450 per semester
+      B.Tech (Hons.) CSE specialisations: USD 3,000 per semester
+      Examination fee: USD 75 per semester
+    hostel: International students use the same room tiers (1-4 seater, AC/non-AC, standard or apartment). Hostel
+      and mess for international applicants are quoted in USD on LPU's international admissions page; confirm the
+      current tariff with the International Office.
+    note: Fee in INR applies to India, Sri Lanka, Bhutan, Nepal and Bangladesh; other countries pay in USD.
+  loan:
+    text: For an education loan, banks usually ask for an admission/fee structure letter and a Bonafide certificate.
+      Request them from the university once your admission is confirmed (via UMS request or the Student Welfare
+      / Accounts office). Bonafide letters are usually issued within a few working days; confirm the current turnaround
+      with the helpdesk.
+    verified: false
+  refund:
+    text: LPU follows UGC fee-refund norms. In general a withdrawal well before the session starts gets most of
+      the fee back less a small processing charge, and the refund percentage shrinks as the start date passes. The
+      INR 10,000 booking amount is adjusted against semester 1, not charged on top. Exact slabs and timelines are
+      in LPU's refund policy; confirm with Accounts before withdrawing.
+    verified: false
+exam_fee_note: Examination fee INR 5,000 per semester for most UG programmes (from semester 2 for B.Tech); INR 4,500
+  for many PG programmes.
+topics:
+- id: programmes
+  label: Programmes & curriculum
+  keywords:
+  - programme
+  - course
+  - curriculum
+  - syllabus
+  - branch
+  - specialisation
+  - degree
+  prompt: Which programmes does LPU offer?
+- id: fees
+  label: Fees & cost
+  keywords:
+  - fee
+  - cost
+  - tuition
+  - payment
+  - semester
+  - price
+  prompt: What is the fee for B.Tech CSE?
+- id: eligibility
+  label: Eligibility & criteria
+  keywords:
+  - eligible
+  - eligibility
+  - criteria
+  - marks
+  - percentage
+  - qualification
+  prompt: Eligibility criteria for MBA
+- id: scholarship
+  label: Scholarships & LPUNEST
+  keywords:
+  - scholarship
+  - lpunest
+  - waiver
+  - merit
+  - discount
+  prompt: What scholarships are available?
+- id: hostel
+  label: Hostels & accommodation
+  keywords:
+  - hostel
+  - room
+  - mess
+  - accommodation
+  - stay
+  - food
+  prompt: Hostel room and mess charges
+- id: admission
+  label: Admissions & deadlines
+  keywords:
+  - admission
+  - apply
+  - deadline
+  - procedure
+  - date
+  - registration
+  prompt: Step-by-step admission procedure
+- id: documents
+  label: Document verification
+  keywords:
+  - document
+  - certificate
+  - marksheet
+  - verification
+  - proof
+  prompt: What documents are required for admission?
+- id: ums
+  label: UMS & student portal
+  keywords:
+  - ums
+  - portal
+  - login
+  - password
+  - attendance
+  - result
+  prompt: How do I log in to UMS?
